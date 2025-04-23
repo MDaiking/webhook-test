@@ -1,9 +1,9 @@
 name: mention_kadohyo
-on: workflow_dispatch
+on:
   
-#  schedule:
-#    # 定期実行する時間・・・①
-#    - cron: '45 7 * * *'
+  schedule:
+    # 定期実行する時間・・・①
+    - cron: '0 9 23 4 *'
 
 defaults:
   run:
