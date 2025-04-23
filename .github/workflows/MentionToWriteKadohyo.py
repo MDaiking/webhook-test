@@ -1,3 +1,5 @@
+import os
+
 webhook_url = os.environ.get("WEBHOOK_URL")
 
 message = {
