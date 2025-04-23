@@ -1,0 +1,25 @@
+name: housework_bot
+on:
+  schedule:
+    # 定期実行する時間・・・①
+    - cron: '45 7 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          # pip更新
+          python -m pip install --upgrade pip
+          # 必要なパッケージインストール・・・②
+          
+      - name: Run script
+        run: |
+          python MentionToWriteKadohyo.py
