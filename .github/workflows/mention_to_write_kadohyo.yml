@@ -30,7 +30,7 @@ jobs:
           
       - name: Run script
         env:
-          API_KEY: ${{ secrets.WEBHOOK_URL }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         run: |
           
           python MentionToWriteKadohyo.py
