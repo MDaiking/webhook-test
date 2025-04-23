@@ -11,7 +11,8 @@ headers = {
     'Content-Type': 'application/json'
 }
 
-
+import requests
+import json
 response = requests.post(webhook_url, data=json.dumps(message), headers=headers)
 
 if response.status_code != 204:
