@@ -5,9 +5,14 @@ on: workflow_dispatch
 #    # 定期実行する時間・・・①
 #    - cron: '45 7 * * *'
 
+defaults:
+  run:
+    working-directory: .github/workflows
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    
 
     steps:
       - uses: actions/checkout@v2
@@ -17,6 +22,7 @@ jobs:
           python-version: 3.13.3
       - name: Install dependencies
         run: |
+        
           # pip更新
           python -m pip install --upgrade pip
           # 必要なパッケージインストール・・・②
