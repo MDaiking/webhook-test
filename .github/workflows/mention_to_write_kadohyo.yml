@@ -23,4 +23,5 @@ jobs:
           
       - name: Run script
         run: |
-          python MentionToWriteKadohyo.py
+          DIR
+          #python MentionToWriteKadohyo.py
