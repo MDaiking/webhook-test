@@ -3,7 +3,7 @@ on:
   
   schedule:
     # 定期実行する時間・・・①
-    - cron: '32 1 * * *'
+    - cron: '0 2 * * *'
 
 defaults:
   run:
